@@ -2,3 +2,8 @@
   command: cat /app/date
 - service: deploy
   command: ls /app
+- service: deploy
+  type: push
+  image_name: mxlje/csd-deployment-container
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: dockercfg.encrypted
