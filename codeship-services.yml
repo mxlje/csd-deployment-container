@@ -1,8 +1,9 @@
 compiledemo:
   image: ubuntu
+
 deploy:
   build:
-    image: busybox_deployment_container
+    image: mxlje/csd-deployment-container
     dockerfile_path: Dockerfile
     configure:
       service: compiledemo
